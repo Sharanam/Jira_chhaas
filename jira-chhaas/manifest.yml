@@ -1,0 +1,15 @@
+modules:
+  jiraServiceManagement:queuePage:
+    - key: jira-chhaas-hello-world-page
+      resource: main
+      resolver:
+        function: resolver
+      title: jira-chhaas
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: static/hello-world/build
+app:
+  id: ari:cloud:ecosystem::app/6aa5703f-8327-460b-aae9-4e8ddd412df7
